@@ -72,7 +72,6 @@ function fireplacescene(){
 }
 
 
-
 mainTL.add(windowscene())
 mainTL.add(cabinscene())
 mainTL.add(windowscene2())
