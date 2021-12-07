@@ -13,22 +13,10 @@ gsap.set(".colleges",{ opacity: 0, transformOrigin:"center"});
 
 const mainTL = gsap.timeline()
 
-function windowscene(){
-    const tl=gsap.timeline();
-    
-    
-    return tl;
-}
+
 function cabinscene(){
     const tl=gsap.timeline();
-
     tl.to(".colleges",{duration: .3, opacity: 1, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
-    return tl;
-}
-
-function windowscene2(){
-    const tl=gsap.timeline();
-    
     return tl;
 }
 
