@@ -75,7 +75,6 @@ mainTL.add(cabinscene())
 mainTL.add(windowscene2())
 mainTL.add(fireplacescene())
 
-const mainTL = gsap.timeline()
 
 
 GSDevTools.create();
