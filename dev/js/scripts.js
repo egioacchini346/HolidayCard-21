@@ -1,4 +1,4 @@
-import {gsap} from "gsap";
+import { gsap } from "gsap";
 import { GSDevTools } from "gsap/GSDevTools";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
