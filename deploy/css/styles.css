@@ -376,10 +376,6 @@ ul li {
 /* =============
     Typography
 ============= */
-body {
-  font-family: "Lato", sans-serif;
-  font-family: "Raleway", sans-serif;
-}
 body h1,
 body h2,
 body h3,
@@ -467,6 +463,6 @@ textarea {
 #card > div svg g #cabin-scene_2 {
   display: none;
 }
-#card > div svg g #fireplace-scene {
+#card > div svg g #cabin-scene {
   display: none;
 }
