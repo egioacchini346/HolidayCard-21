@@ -3,7 +3,7 @@ import { GSDevTools } from "gsap/GSDevTools";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 
-gsap.registerPlugin(GSDevTools);
+gsap.registerPlugin(GSDevTools, MotionPathPlugin, DrawSVGPlugin);
 
 
 gsap.set("#card",{ scale: .85, transformOrigin:"center"});
