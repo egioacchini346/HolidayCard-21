@@ -495,3 +495,23 @@ header > div aside a {
 /* =============
     Footer
 ============= */
+#card {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+#card > div svg {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#card > div svg g #window-scene {
+  display: none;
+}
+#card > div svg g #cabin-scene_2 {
+  display: none;
+}
+#card > div svg g #cabin-scene {
+  display: none;
+}

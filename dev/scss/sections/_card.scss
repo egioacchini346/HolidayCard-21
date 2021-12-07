@@ -1,0 +1,37 @@
+#card {
+
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+
+    >div {
+
+        svg {
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            g {
+                #window-scene {
+                   display: none;
+                }
+                
+                #cabin-scene_2 {
+                    display: none;
+                }
+
+                #cabin-scene {
+                    display: none;
+                }
+
+                //#fireplace-scene {
+                    //display: none;
+                //}
+
+
+            }
+
+        }
+    }
+}
