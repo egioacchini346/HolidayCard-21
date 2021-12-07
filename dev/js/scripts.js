@@ -1,7 +1,4 @@
 import { gsap } from "gsap";
-
-const mainTL = gsap.timeline();
-
 import { GSDevTools } from "gsap/GSDevTools";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
@@ -20,7 +17,6 @@ function cabinscene(){
     const tl=gsap.timeline();
     tl.to(".colleges",{duration: .3, opacity: 1, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
     return tl;
-    
 }
 
 function fireplacescene(){
