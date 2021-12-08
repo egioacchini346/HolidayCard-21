@@ -12,8 +12,13 @@ gsap.set("#leaf-left",{ opacity: 0, transformOrigin:"center"});
 gsap.set("#leaf-right",{ opacity: 0, transformOrigin:"center"});
 gsap.set("#light",{ opacity: 0, transformOrigin:"center"});
 gsap.set("#light_2",{ opacity: 0, transformOrigin:"center"});
+gsap.set("#Vector_52",{transformOrigin:"center"});
+gsap.set("#medium-flame",{ opacity: 0, transformOrigin:"center"});
+gsap.set("#faint-flame",{ opacity: 0, transformOrigin:"center"});
+gsap.set("#bright-flame",{ opacity: 0, transformOrigin:"center"});
 
 const mainTL = gsap.timeline()
+
 
 
 function cabinscene(){
@@ -66,30 +71,116 @@ function fireplacescene(){
     tl.to("#leaf-right", {duration: .25, opacity: 1},"-=1.4")
     tl.from("#dragon", {duration: .15, scale: 0, ease: "power1.In"})
 
+    //clock hands spinning
+    tl.to("#Vector_52", {duration: 2, x: 2, y:1.5, rotation: 45},"Sametime")
+    tl.to("#Vector_52", {duration: 2, y:1},"Sametime")
+    
+
+    //fire
+    //medium flame
+    tl.from("#medium-flame", {duration: .15, opacity: 1}, "flicker1")
+    tl.from("#medium-flame", {duration: .15, opacity:.85}, "flicker2")
+    tl.from("#medium-flame", {duration: .15, opacity:.2}, "flicker3")
+    tl.from("#medium-flame", {duration: .15, opacity:.70}, "flicker4")
+    tl.from("#medium-flame", {duration: .15, opacity:.15}, "flicker5")
+    tl.from("#medium-flame", {duration: .15, opacity:.90}, "flicker6")
+    tl.from("#medium-flame", {duration: .15, opacity:.55}, "flicker7")
+    tl.from("#medium-flame", {duration: .15, opacity:.35}, "flicker8")
+    tl.from("#medium-flame", {duration: .15, opacity:.65}, "flicker9")
+    tl.from("#medium-flame", {duration: .15, opacity:.2}, "flicker10")
+    tl.from("#medium-flame", {duration: .15, opacity: 1}, "flicker11")
+    tl.from("#medium-flame", {duration: .15, opacity: 1}, "flicker12")
+    tl.from("#medium-flame", {duration: .15, opacity:.85}, "flicker13")
+    tl.from("#medium-flame", {duration: .15, opacity:.2}, "flicker14")
+    tl.from("#medium-flame", {duration: .15, opacity:.70}, "flicker15")
+    tl.from("#medium-flame", {duration: .15, opacity:.15}, "flicker16")
+    tl.from("#medium-flame", {duration: .15, opacity:.90}, "flicker17")
+    tl.from("#medium-flame", {duration: .15, opacity:.55}, "flicker18")
+    tl.from("#medium-flame", {duration: .15, opacity:.35}, "flicker19")
+    tl.from("#medium-flame", {duration: .15, opacity:.65}, "flicker20")
+    tl.from("#medium-flame", {duration: .15, opacity:.2}, "flicker21")
+    tl.from("#medium-flame", {duration: .15, opacity: 1}, "flicker22")
+    //faint flame
+    tl.from("#faint-flame", {duration: .25, opacity: 1}, "flicker1")
+    tl.from("#faint-flame", {duration: .25, opacity:.65}, "flicker2")
+    tl.from("#faint-flame", {duration: .25, opacity:.85}, "flicker3")
+    tl.from("#faint-flame", {duration: .25, opacity:.2}, "flicker4")
+    tl.from("#faint-flame", {duration: .25, opacity:.15}, "flicker5")
+    tl.from("#faint-flame", {duration: .25, opacity:.90}, "flicker6")
+    tl.from("#faint-flame", {duration: .25, opacity:.35}, "flicker7")
+    tl.from("#faint-flame", {duration: .25, opacity:.55}, "flicker8")
+    tl.from("#faint-flame", {duration: .25, opacity:.45}, "flicker9")
+    tl.from("#faint-flame", {duration: .25, opacity:.65}, "flicker10")
+    tl.from("#faint-flame", {duration: .25, opacity: 1}, "flicker11")
+    tl.from("#medium-flame", {duration: .25, opacity: 1}, "flicker12")
+    tl.from("#medium-flame", {duration: .25, opacity:.85}, "flicker13")
+    tl.from("#medium-flame", {duration: .25, opacity:.2}, "flicker14")
+    tl.from("#medium-flame", {duration: .25, opacity:.70}, "flicker15")
+    //bright flame 
+    tl.from("#bright-flame", {duration: .05, opacity: 1}, "flicker1")
+    tl.from("#bright-flame", {duration: .05, opacity:.85}, "flicker2")
+    tl.from("#bright-flame", {duration: .15, opacity:.2}, "flicker3")
+    tl.from("#bright-flame", {duration: .10, opacity:.70}, "flicker4")
+    tl.from("#bright-flame", {duration: .05, opacity:.15}, "flicker5")
+    tl.from("#bright-flame", {duration: .05, opacity:.90}, "flicker6")
+    tl.from("#bright-flame", {duration: .10, opacity:.55}, "flicker7")
+    tl.from("#bright-flame", {duration: .15, opacity:.35}, "flicker8")
+    tl.from("#bright-flame", {duration: .05, opacity:.65}, "flicker9")
+    tl.from("#bright-flame", {duration: .05, opacity:.2}, "flicker10")
+    tl.from("#bright-flame", {duration: .05, opacity: 1}, "flicker11")
+    tl.from("#bright-flame", {duration: .10, opacity: 1}, "flicker12")
+    tl.from("#bright-flame", {duration: .15, opacity:.85}, "flicker13")
+    tl.from("#bright-flame", {duration: .15, opacity:.2}, "flicker14")
+    tl.from("#bright-flame", {duration: .10, opacity:.70}, "flicker15")
+    tl.from("#bright-flame", {duration: .05, opacity:.15}, "flicker16")
+    tl.from("#bright-flame", {duration: .05, opacity:.90}, "flicker17")
+    tl.from("#bright-flame", {duration: .15, opacity:.55}, "flicker18")
+    tl.from("#bright-flame", {duration: .10, opacity:.35}, "flicker19")
+    tl.from("#bright-flame", {duration: .15, opacity:.65}, "flicker20")
+    //small flames flickering
+    tl.from("#Vector_58", {duration: .2, opacity: 1}, "flicker1")
+    tl.to("#Vector_58", {duration: .2, opacity: 0})
+    tl.from("#Vector_60", {duration: .1, opacity: 1}, "flicker5")
+    tl.to("#Vector_60", {duration: .3, opacity: 0})
+    tl.from("#Vector_62", {duration: .2, opacity: 1}, "flicker9")
+    tl.to("#Vector_62", {duration: .1, opacity: 0})
+    tl.from("#Vector_65", {duration: .1, opacity: 1}, "flicker12")
+    tl.to("#Vector_65", {duration: .2, opacity: 0})
+    tl.from("#Vector_59", {duration: .2, opacity: 1}, "flicker14")
+    tl.to("#Vector_59", {duration: .2, opacity: 0},)
+    tl.from("#Vector_63", {duration: .1, opacity: 1}, "flicker14")
+    tl.to("#Vector_63", {duration: .2, opacity: 0})
+    tl.from("#Vector_61", {duration: .2, opacity: 1}, "flicker15")
+    tl.to("#Vector_61", {duration: .2, opacity: 0})
+    tl.from("#Vector_64", {duration: .1, opacity: 1}, "flicker17")
+    tl.to("#Vector_64", {duration: .2, opacity: 0})
+
     //small candle lights flicker
     tl.from("#light", {duration: .15, opacity: 1}, "flicker1")
-    tl.from("#light", {duration: .15, opacity:.85}, "flicker2")
-    tl.from("#light", {duration: .15, opacity:.2}, "flicker3")
-    tl.from("#light", {duration: .15, opacity:.70}, "flicker4")
+    tl.from("#light", {duration: .15, opacity:.65}, "flicker2")
+    tl.from("#light", {duration: .15, opacity:.85}, "flicker3")
+    tl.from("#light", {duration: .15, opacity:.2}, "flicker4")
     tl.from("#light", {duration: .15, opacity:.15}, "flicker5")
     tl.from("#light", {duration: .15, opacity:.90}, "flicker6")
-    tl.from("#light", {duration: .15, opacity:.55}, "flicker7")
-    tl.from("#light", {duration: .15, opacity:.35}, "flicker8")
-    tl.from("#light", {duration: .15, opacity:.65}, "flicker9")
-    tl.from("#light", {duration: .15, opacity:.2}, "flicker10")
+    tl.from("#light", {duration: .15, opacity:.35}, "flicker7")
+    tl.from("#light", {duration: .15, opacity:.55}, "flicker8")
+    tl.from("#light", {duration: .15, opacity:.45}, "flicker9")
+    tl.from("#light", {duration: .15, opacity:.65}, "flicker10")
     tl.from("#light", {duration: .15, opacity: 1}, "flicker11")
+    
     //big candle lights flicker
     tl.from("#light_2", {duration: .15, opacity: 1}, "flicker1")
-    tl.from("#light_2", {duration: .15, opacity:.85}, "flicker2")
-    tl.from("#light_2", {duration: .15, opacity:.2}, "flicker3")
-    tl.from("#light_2", {duration: .15, opacity:.70}, "flicker4")
-    tl.from("#light_2", {duration: .15, opacity:.15}, "flicker5")
+    tl.from("#light_2", {duration: .15, opacity:.55}, "flicker2")
+    tl.from("#light_2", {duration: .15, opacity:.10}, "flicker3")
+    tl.from("#light_2", {duration: .15, opacity:.40}, "flicker4")
+    tl.from("#light_2", {duration: .15, opacity:.75}, "flicker5")
     tl.from("#light_2", {duration: .15, opacity:.90}, "flicker6")
-    tl.from("#light_2", {duration: .15, opacity:.55}, "flicker7")
-    tl.from("#light_2", {duration: .15, opacity:.35}, "flicker8")
-    tl.from("#light_2", {duration: .15, opacity:.65}, "flicker9")
-    tl.from("#light_2", {duration: .15, opacity:.2}, "flicker10")
+    tl.from("#light_2", {duration: .15, opacity:.65}, "flicker7")
+    tl.from("#light_2", {duration: .15, opacity:.25}, "flicker8")
+    tl.from("#light_2", {duration: .15, opacity:.45}, "flicker9")
+    tl.from("#light_2", {duration: .15, opacity:.15}, "flicker10")
     tl.from("#light_2", {duration: .15, opacity: 1}, "flicker11")
+
 
 
     
