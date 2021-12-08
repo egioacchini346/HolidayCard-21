@@ -248,11 +248,11 @@ function fireplacescene(){
 
     //message
 
-    tl.to("#Rectangle-9", {duration: .5, opacity: 1})
-    tl.to("#seasons-greetings", {duration: .5, opacity: 1, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
-    tl.to("#wishing", {duration: .5, opacity: 1, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
-    tl.to("#your-friends", {duration: .5, opacity: 1, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
-    tl.to("#logo", {duration: .5, opacity: 1, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
+    tl.to("#Rectangle-9", {duration: .7, opacity: 1})
+    tl.to("#seasons-greetings", {duration: .7, opacity: 1, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
+    tl.to("#wishing", {duration: .7, opacity: 1, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
+    tl.to("#your-friends", {duration: .7, opacity: 1, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
+    tl.to("#logo", {duration: .7, opacity: 1, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
     return tl;
 }
 
